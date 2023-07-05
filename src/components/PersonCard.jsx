@@ -3,11 +3,8 @@ import '../App.css';
 
 const PersonCard = (props) => {
     
-    const {first_name} = props
-    const {last_name} = props
-    // const {age} = props
-    const {hair_color} = props
-
+    const {first_name, last_name, hair_color} = props
+    // moved age value to be handled with state
     const [age, setAge] = useState(props.age)
 
     const birthday = () => {
